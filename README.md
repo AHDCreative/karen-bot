@@ -1,19 +1,19 @@
-# crc-bot [![Build Status](https://travis-ci.org/IrealiTY/crc-bot.svg?branch=master)](https://travis-ci.org/IrealiTY/crc-bot)
+# karen-bot [![Build Status](https://travis-ci.org/IrealiTY/crc-bot.svg?branch=master)](https://travis-ci.org/IrealiTY/crc-bot)
 
-## Discord Bot for Chaos Raiding Central
+## Discord Bot for Final Fantasy XIV Italia
 
-This is the Discord Bot used for the Chaos Raiding Central (short CRC). The idea is to have a minimal assistance bot for role calling and monitoring and maybe other Final Fantasy XIV related features.
+This is the Discord Bot used for the Final Fantasy XIV Italia (short FFXIVITA). The idea is to have a minimal assistance bot for role calling and monitoring and maybe other Final Fantasy XIV related features.
 
 ## Installation
 
 1. Install [node.js](https://nodejs.org/en/download/)
 2. Clone this repo
 
-        $ git clone https://github.com/IrealiTY/crc-bot.git
+        $ git clone https://github.com/AHSubsDesign/karen-bot.git
 
 3. Download the required node modules from NPM
 
-        $ cd crc-bot
+        $ cd karen-bot
         $ npm install
 
 5. Create the config.js
@@ -94,12 +94,8 @@ Can be configured in the `config.js`. `output:` Defines in which channel the log
 The `throttle.js` handles a time-out system via tokens. 1 Token equals to how a user can post within the given periode of time.
     
     throttle: {
-        "static_lfm": {    <------- Channel Name, spelling is key....
+        "cerca_statico: {    <------- Channel Name, spelling is key....
             maxTokens: 1,  <------- Tokens == How often a user can post
             tokenInterval: 86400 <------- Timeout before a user can post again in seconds
         },
     },
-
-====
-
-Credit goes to [GeekyDeaks](https://github.com/GeekyDeaks). Drop him a donation for that ;)
